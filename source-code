@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,kucuk;
+    int ekok,ebob;
+    printf("ebob-ekok icin 2 sayi girin\n>");
+    scanf("%d",&a);
+    printf(">");
+    scanf("%d",&b);
+    if(a<=b){
+            kucuk=a;
+    }
+    else{
+        kucuk=b;
+    }
+    for(int i=1;i<=kucuk;i++){
+        if(a%i==0 && b%i==0){
+            ebob=i;
+        }
+    }
+    ekok=a*b/ebob;
+    printf("ebob:%d",ebob);
+    printf("\nekok:%d",ekok);
+}
